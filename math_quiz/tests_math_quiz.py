@@ -13,12 +13,15 @@ class TestMathGame(unittest.TestCase):
             self.assertTrue(min_val <= rand_num <= max_val)
 
     def test_generate_random_operator(self):
+            # Test if random operators generated within +, - ,*
+
         for i in range(1,5):
             operator = generate_random_operator()
             self.assertIn(operator, ['+', '-', '*'])
 
 
     def test_arithmetic_operation(self):
+            # Test if arithmetic operations work
             test_cases = [
                 (5, 2, '+', '5 + 2', 7),
                 (6, 7, '-', '6 - 7', -1),

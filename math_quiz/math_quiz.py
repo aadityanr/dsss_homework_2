@@ -8,8 +8,10 @@ def random_generator(min, max):
     """
     return random.randint(min, max)
 
-#Generates a random operator from the given choice
 def generate_random_operator():
+    """
+    Generates a random operator from the given choice
+    """
     return random.choice(['+', '-', '*'])
 
 
@@ -32,8 +34,10 @@ def arithmetic_operation(num_1, num_2, operator):
         print('Wrong input! Please try again.')
 
 
-# Math Quiz connected with previous functions
 def math_quiz():
+    """
+    Math Quiz connected with previous functions
+    """
     score = 0
     total_questions = 3
 
